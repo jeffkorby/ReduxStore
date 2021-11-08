@@ -4,7 +4,7 @@ import Jumbotron from '../components/Jumbotron';
 import { ADD_ORDER } from '../utils/mutations';
 import { idbPromise } from '../utils/helpers';
 
-function Success() {
+export default function Success() {
   const [addOrder] = useMutation(ADD_ORDER);
 
   useEffect(() => {
@@ -39,5 +39,3 @@ function Success() {
     </div>
   );
 }
-
-export default Success;

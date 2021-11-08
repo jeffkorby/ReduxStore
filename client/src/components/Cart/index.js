@@ -11,8 +11,10 @@ import './style.css';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
-const Cart = () => {
-  const state = useSelector((state) => state);
+export default function Cart () {
+  const state = useSelector((state) => {
+    return state;
+  });
   const dispatch = useDispatch();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
@@ -104,5 +106,3 @@ const Cart = () => {
     </div>
   );
 };
-
-export default Cart;

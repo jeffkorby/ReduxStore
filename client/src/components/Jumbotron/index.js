@@ -1,6 +1,6 @@
 import React from "react";
 
-function Jumbotron({ children }) {
+export default function Jumbotron({ children }) {
   return (
     <div
       style={{ height: 560, clear: "both", paddingTop: 120, textAlign: "center" }}
@@ -9,5 +9,3 @@ function Jumbotron({ children }) {
     </div>
   );
 }
-
-export default Jumbotron;

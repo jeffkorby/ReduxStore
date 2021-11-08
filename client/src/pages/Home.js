@@ -3,7 +3,7 @@ import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 
-const Home = () => {
+export default function Home () {
   return (
     <div className="container">
       <CategoryMenu />
@@ -12,5 +12,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
